@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/YOUR-USERNAME/paywhendone/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR-USERNAME/paywhendone/actions/workflows/ci.yml)
 
-**Status:** Phase 1 of 18 - project foundation. There are no product features yet; they arrive phase by phase (see the [roadmap](docs/ROADMAP.md)).
+**Status:** Phase 2 of 18 - API skeleton. There are no product features yet; they arrive phase by phase (see the [roadmap](docs/ROADMAP.md)).
 
 ## The problem
 
@@ -36,9 +36,9 @@ This is a learning and portfolio project that runs in Razorpay **test mode only*
 ```text
 paywhendone/
   apps/
-    api/        Express backend (Phase 2)
+    api/        Express backend 
     web/        React frontend (Phase 7)
-  packages/
+  packages/     Shared code , created when first needed
     shared/     Types and validation shared by both apps (Phase 2)
   docs/         Roadmap, glossary and architecture decision records
   .github/      CI workflow and pull request template
@@ -52,13 +52,25 @@ You need Node.js 22.22.1 or newer (the project is developed on Node 24).
 git clone https://github.com/YOUR-USERNAME/paywhendone.git
 cd paywhendone
 npm install
-npm run lint
-npm run format:check
+cp apps/api/.env.example apps/api/.env
+npm run dev
 ```
+
+The API starts on `http://localhost:3000`. Check it with `GET /health`.
+
+### Useful commands
+
+- `npm run dev` starts the API and restarts it when files change
+- `npm test` runs the automated tests
+- `npm run typecheck` checks types
+- `npm run lint` and `npm run format:check` check code quality
+- `npm run build` compiles the API to `apps/api/dist`
 
 ## Documentation
 
 - [Roadmap](docs/ROADMAP.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [API reference](docs/API.md)
 - [Glossary](docs/GLOSSARY.md)
 - [Architecture decision records](docs/adr/)
 - [Contributing](CONTRIBUTING.md)

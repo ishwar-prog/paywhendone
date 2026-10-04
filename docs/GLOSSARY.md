@@ -43,3 +43,27 @@ A naming style for commit messages, such as `feat: add login`, that makes histor
 
 **CI (continuous integration)**
 Automatic checks that run on every push or pull request.
+
+**Middleware**
+A function that runs on every request before the final handler, such as logging or reading the request body. Requests pass through middleware in order.
+
+**Environment variable**
+A setting supplied from outside the code, such as the port number. Keeps configuration and secrets out of the repository.
+
+**Fail fast**
+Stopping immediately with a clear message when something is wrong, instead of continuing and failing in a confusing way later.
+
+**Structured logging**
+Writing each log entry as data (JSON) instead of a sentence, so tools can search and filter it.
+
+**Request ID**
+A unique identifier given to each request. It links the log lines, the response and any error report for that one request.
+
+**Graceful shutdown**
+When the server is told to stop, it finishes the requests already in progress before exiting.
+
+**Health check**
+A simple endpoint that reports whether the application is running. Used by hosting platforms and monitoring.
+
+**Dependency injection**
+Passing the things a piece of code needs (like a logger) in as arguments instead of creating or importing them inside. Makes code easy to test.
