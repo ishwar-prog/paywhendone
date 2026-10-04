@@ -2,8 +2,8 @@
 
 The project is built in small phases, roughly one per day. Each phase ends with a pull request.
 
-- [ ] **Phase 1:** Repository, monorepo, tooling, CI, README, first pull request
-- [ ] **Phase 2:** API skeleton, configuration, logging, error handling, first tests in CI
+- [x] **Phase 1:** Repository, monorepo, tooling, CI, README, first pull request
+- [x] **Phase 2:** API skeleton, configuration, logging, error handling, first tests in CI
 - [ ] **Phase 3:** PostgreSQL in Docker, Drizzle ORM, migrations, users table
 - [ ] **Phase 4:** Authentication and security middleware
 - [ ] **Phase 5:** Contract and milestone state machine
